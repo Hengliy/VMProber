@@ -1,0 +1,37 @@
+Module                  Size  Used by
+rfcomm                 69632  0 
+bnep                   20480  2 
+bluetooth             516096  10 bnep,rfcomm
+joydev                 20480  0 
+xen_kbdfront           16384  0 
+intel_rapl             20480  0 
+crct10dif_pclmul       16384  0 
+crc32_pclmul           16384  0 
+aesni_intel           167936  0 
+input_leds             16384  0 
+aes_x86_64             20480  1 aesni_intel
+cirrus                 28672  2 
+ttm                    94208  1 cirrus
+serio_raw              16384  0 
+lrw                    16384  1 aesni_intel
+gf128mul               16384  1 lrw
+glue_helper            16384  1 aesni_intel
+ablk_helper            16384  1 aesni_intel
+cryptd                 20480  2 aesni_intel,ablk_helper
+drm_kms_helper        143360  1 cirrus
+8250_fintek            16384  0 
+drm                   360448  5 ttm,drm_kms_helper,cirrus
+i2c_piix4              24576  0 
+mac_hid                16384  0 
+fb_sys_fops            16384  1 drm_kms_helper
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+parport_pc             36864  0 
+ppdev                  20480  0 
+lp                     20480  0 
+parport                49152  3 lp,ppdev,parport_pc
+floppy                 73728  0 
+psmouse               122880  0 
+pata_acpi              16384  0 
+fjes                   28672  0 

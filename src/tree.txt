@@ -1,0 +1,156 @@
+//bin/
+bash
+bunzip2
+busybox
+bzcat
+bzcmp -> bzdiff
+bzdiff
+bzegrep -> bzgrep
+bzexe
+bzfgrep -> bzgrep
+bzgrep
+bzip2
+bzip2recover
+bzless -> bzmore
+bzmore
+cat
+chacl
+chgrp
+chmod
+chown
+chvt
+cp
+cpio
+dash
+date
+dbus-cleanup-sockets
+dbus-daemon
+dbus-uuidgen
+dd
+df
+dir
+dmesg
+dnsdomainname -> hostname
+domainname -> hostname
+dumpkeys
+echo
+ed
+egrep
+false
+fgconsole
+fgrep
+findmnt
+fuser
+fusermount
+getfacl
+grep
+gunzip
+gzexe
+gzip
+hostname
+ip
+kbd_mode
+kill
+kmod
+less
+lessecho
+lessfile -> lesspipe
+lesskey
+lesspipe
+ln
+loadkeys
+login
+loginctl
+lowntfs-3g
+lsblk
+lsmod -> kmod
+mkdir
+mknod
+mktemp
+more
+mount
+mountpoint
+mt -> /etc/alternatives/mt
+mt-gnu
+mv
+nano
+nc -> /etc/alternatives/nc
+nc.openbsd
+netcat -> /etc/alternatives/netcat
+netstat
+nisdomainname -> hostname
+ntfs-3g
+ntfs-3g.probe
+ntfs-3g.secaudit
+ntfs-3g.usermap
+ntfscat
+ntfsck
+ntfscluster
+ntfscmp
+ntfsdump_logfile
+ntfsfix
+ntfsinfo
+ntfsls
+ntfsmftalloc
+ntfsmove
+ntfstruncate
+ntfswipe
+open -> openvt
+openvt
+pidof -> /sbin/killall5
+ping
+ping6
+plymouth
+plymouth-upstart-bridge
+ps
+pwd
+rbash -> bash
+readlink
+readlink2
+red
+rm
+rmdir
+rnano -> nano
+runcontainer
+running-in-container
+run-parts
+sed
+setfacl
+setfont
+setupcon
+sh -> dash
+sh.distrib -> dash
+sleep
+ss
+static-sh -> busybox
+stty
+su
+sync
+tailf
+tar
+tempfile
+touch
+true
+udevadm
+ulockmgr_server
+umount
+uname
+uncompress
+unicode_start
+vdir
+vmmouse_detect
+which
+whiptail
+ypdomainname -> hostname
+zcat
+zcmp
+zdiff
+zegrep
+zfgrep
+zforce
+zgrep
+zless
+zmore
+znew
+
+2 directories, 151 files

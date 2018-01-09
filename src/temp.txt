@@ -1,0 +1,1 @@
+g++ -lwx_gtk2u_aui-3.0 gridApp.cpp gridMain.cpp -finput-charset=gbk `wx-config --libs std,aui --cxxflags` -I /libvmi/libvmi-0.10.1 -I /usr/include/glib-2.0 -I /usr/lib/x86_64-linux-gnu/glib-2.0/include -Wall -Wextra -g -O2 -o VMdefendor  -L /usr/local/lib/ -L /libvmi/libvmi-0.10.1/libvmi/.libs/ /libvmi/libvmi-0.10.1/libvmi/.libs/libvmi.so -lm -lglib-2.0 -ldl

@@ -1,0 +1,6 @@
+sudo g++ -lwx_gtk2u_aui-3.0 CustomArtProv.cpp FileTree.cpp ModuleList.cpp PanelFile.cpp PanelModule.cpp PanelProcess.cpp PanelVM.cpp PanelWelcome.cpp process_list.cpp ProcessTree.cpp Profile.cpp ProfileMain.cpp SettingMain.cpp SettingsPanel.cpp SizeReportCtrl.cpp VMdefendor.cpp VMdefendorFrame.cpp getTxt.cpp VMList.cpp cmp_file.cpp VMStatusBar.cpp WorkerProcess.cpp module.cpp -finput-charset=UTF-8 `wx-config --libs std,aui --cxxflags` -I /libvmi/libvmi-0.10.1 -I /usr/include/glib-2.0 -I /usr/lib/x86_64-linux-gnu/glib-2.0/include -Wall -Wextra -g -O2 -o batteria -L /usr/local/lib/ -L /libvmi/libvmi-0.10.1/libvmi/.libs/ /libvmi/libvmi-0.10.1/libvmi/.libs/libvmi.so -lm -lglib-2.0 -ldl -w
+
+
+2.3.2.so，如果没有这样的链接，还是会出错，因为ld只会找libxxxx.so，所以如果你要用到xxxx库，而只有libxxxx.so.x或者libxxxx-x.x.x.so，做一个链接就可以了ln -s libxxxx-x.x.x.so libxxxx.so。
+手工来写链接参数总是很麻烦的，还好很多库开发包提供了生成链接参数的程序，名字一般叫xxxx-config，一般放在/usr/bin目录下，比如gtk1.2的链接参数生成程序是gtk-config，执行gtk-config --libs就能得到以下输出"-L/usr/lib -L/usr/X11R6/lib -lgtk -lgdk -rdynamic-lgmodule -lglib -ldl -lXi -lXext -lX11 -lm"，这就是编译一个gtk1.2程序所需的gtk链接参数，xxx-config除了--libs参数外还有一个参数是--cflags用来生成头文件包含目录的，也就是-I参数，在下面我们将会讲到。你可以试试执行gtk-config --libs --cflags，看看输出结果。
+现在的问题就是怎样用这些输出结果了，最笨的方法就是复制粘贴或者照抄，聪明的办法是在编译命令行里加入这个`xxxx-config --libs --cflags`，比如编译一个gtk程序：gcc gtktest.c `gtk-config --libs --cflags`这样就差不多了。注意`不是单引号，而是1键左边那个键。
